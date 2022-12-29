@@ -1,0 +1,107 @@
+.addProductForm{
+    
+    background: #FFFFFF;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    width: 83vw;
+    padding: 40px;
+}
+.addProductTitle{
+  width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.button-3 {
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-3:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button-3:hover {
+  background-color: #2c974b;
+}
+
+.button-3:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.button-3:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+.productForm{
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    height: 100%;
+}
+.productFormLeft,.productFormRight{
+    flex: 1;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+.productFields{
+display: flex;
+flex-direction: column;
+gap: 8px;
+width: 100%;
+}
+.productFields label{
+    font-size: 20px;
+}
+.productFields input,#productCat,#productSubCat,#ProductDescription{
+    height: 40px;
+    font-size: 17px;
+    padding: 5px;
+}
+
+#productCat,#productSubCat{
+    cursor: pointer;
+}
+
+@media screen and (min-width:650px) and (max-width:950px){
+  .productForm{
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+@media screen and (max-width:650px){
+.productForm{
+  flex-direction: column;
+}
+
+}

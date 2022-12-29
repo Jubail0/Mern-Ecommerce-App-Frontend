@@ -1,0 +1,94 @@
+.footer_container{
+    display: flex;
+    bottom: 0;
+   
+  }
+  
+  .footer_left{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  }
+  
+  .footer_desc{
+    margin: 20px 0px;
+  }
+  .social_container{
+    display: flex;
+  }
+  .social-icons{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right:20px ;
+  }
+  .i-1{
+    background-color: #3B5999;
+  }
+  .i-2{
+  background-color: #e4405f;
+  }
+  .i-3{
+  background-color: #55acee;
+  }
+  .i-4{
+  background-color: #e60023;
+  }
+  
+  .footer_center{
+    flex: 1;
+    padding: 20px;
+    
+    }
+    .footer_center h3{
+      margin-bottom: 30px;
+    }
+    .footer_center ul{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      
+    }
+    .footer_center li{
+      width: 50%;
+      margin-bottom: 10px;
+     justify-content: left;
+    }
+    
+  
+  .footer_right{
+    flex: 1;
+    padding: 20px;
+   }
+  .footer_right h3{
+    margin-bottom: 30px;
+  }
+  .contact_item{
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  }
+  .contact_item i{
+  margin-right: 10px;
+  }
+  .payments_img{
+    width: 50%;
+  }
+  
+  @media(max-width:650px){
+    .footer_container{
+      flex-direction: column;
+    }
+    .footer_center{
+      display: none;
+    }
+    
+  }

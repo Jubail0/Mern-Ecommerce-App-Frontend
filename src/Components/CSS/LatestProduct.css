@@ -1,0 +1,29 @@
+#latestProducts {
+    width: 100vw;
+    padding: 4% 12% 7%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+#latestProducts h1 {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width:650px) {
+    #latestProducts {
+        display: none;
+    }
+}
+@media screen and (min-width:650px) and(max-width:950px) {
+    #latestProducts {
+        padding: 4%;
+    }
+}

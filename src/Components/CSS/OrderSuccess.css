@@ -1,0 +1,29 @@
+.orderSuccess_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.orderSucess_box{
+    width: 850px;
+    padding: 10px;
+    text-align: center;
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+.orderDetails_link{
+    color: blue;
+    font-size:2rem;
+}
+
+.orderSucess_box h1{
+    font-size: 4rem;
+    padding: 8px;
+    
+}
+.orderSucess_box p{
+    font-size: 2rem;
+    padding: 8px;
+    
+    
+}

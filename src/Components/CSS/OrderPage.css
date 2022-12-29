@@ -1,0 +1,17 @@
+
+.orderForm{
+    padding: 8px;
+    font-size: 15px;
+    line-height: 1rem;
+    
+}
+.shipping_container{
+    display: flex;
+    gap: 30px;
+}
+
+@media screen and (max-width:650px){
+    .shipping_container{
+        flex-direction: column;
+    }
+}

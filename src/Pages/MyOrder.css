@@ -1,0 +1,10 @@
+.myOrder{
+    width: 100vw;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+.myOrder_container{
+    width: 100%;
+    padding: 30px;
+}

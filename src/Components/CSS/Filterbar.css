@@ -1,0 +1,56 @@
+.filter-cat {
+    display: flex;
+    flex-direction: column;
+
+
+}
+.filter-details span {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter_component {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 20%);
+
+}
+
+.filter {
+    border: 1px solid rgb(194, 192, 192);
+    margin-top: 20px;
+
+}
+.filter h3 {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5px;
+    color: #fff;
+}
+
+.filter-details {
+    padding: 8px;
+
+}
+.ratingStar {
+    display: flex;
+    align-items: center;
+}
+
+
+@media screen and(max-width:950px) {
+    .filter_component {
+        display: flex;
+        flex-direction: column;
+    }
+    .filter_component h3 {
+        background-color: transparent;
+        color: black;
+    }
+    .filter {
+        border: none;
+    }
+
+}

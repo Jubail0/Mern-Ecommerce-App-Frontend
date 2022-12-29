@@ -1,0 +1,116 @@
+#mobilesBanner{
+    width: 100vw;
+    height: 100vh;
+   background-image:linear-gradient(
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)
+  ), url("../../Images/image6.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+
+}
+
+
+.mobilesBanner_container{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    opacity: 0;
+    transition: opacity 1s;
+
+}
+.mobilesBanner_container:hover{
+    opacity: 1;
+}
+.mobilesBanner_content{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 35px;
+text-align: center;
+
+
+}
+.mobilesBanner_content h1{
+font-size: 55px;
+font-weight: 700;
+letter-spacing: 1px;
+align-items: center;
+color: #fff;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.mobilesBanner_content button{
+    width: 200px;
+    height: 60px;
+    border: 3px solid #6599e2;
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-top: 30px;
+    transition: all ease 1s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.mobilesBanner_content button:hover{
+    background-color: #fff;
+    color: black;
+}
+
+@media screen and (max-width:650px){
+    #mobilesBanner{
+        background-position:top;
+        
+        
+    }
+    .mobilesBanner_content h1{
+        font-size: 28px;
+        text-align:center;
+        line-height: 1;
+        letter-spacing: 2px;
+        
+      
+    }
+    
+    .mobilesBanner_container{
+        opacity: 1;
+        width: 100%;
+        position: relative;
+    }
+    .mobilesBanner_content button{
+        background-color: #4169e1;
+        width: 180px;
+        height: 50px;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (min-width:650px) and (max-width:950px ){
+    .mobilesBanner_container{
+        opacity: 1;
+    }
+    .mobilesBanner_content button{
+        background-color: #4169e1;
+        width: 180px;
+        height: 50px;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+  }

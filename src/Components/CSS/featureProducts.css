@@ -1,0 +1,24 @@
+#featured-Products{
+    width: 100vw;
+    padding: 4% 14% 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+   
+    
+}
+
+.new-arrivals-products{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    
+    
+    
+}
+

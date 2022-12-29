@@ -1,0 +1,88 @@
+#banner{
+    width: 100vw;
+    height: 100vh;
+    /* margin-top: 50px; */
+    background-image: url("https://images.unsplash.com/photo-1551555029-7959e84a74d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.banner_container{
+    width: 70%;
+    height: 100%;
+    position: relative;
+    
+}
+.banner_content{
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    margin: auto;
+}
+.banner_heading,.banner_p,.banner_btn{
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+}
+.banner_heading{
+    font-size: 48px;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.banner_p{
+    font-size: 20px;
+}
+.banner_btn{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.banner_btn button{
+    width: 140px;
+    height: 55px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-decoration: none;
+    opacity: 1;
+    border-radius: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    
+}
+.banner_btn button:hover{
+    background-color:rgb(33, 42, 47) ; 
+    color: #fff;
+    
+}
+
+@media screen and (max-width:650px){
+    
+    .banner_container{
+       width: 100%;
+       padding: 0px 20px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       
+       
+    }
+    .banner_content{
+        position: static;
+        
+       
+    }
+    .banner_heading{
+        font-size: 32px;
+    }
+    .banner_btn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+}

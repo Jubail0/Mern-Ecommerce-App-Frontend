@@ -1,0 +1,138 @@
+.singleProduct{
+    width: 100%;
+    background-color: #f1f3f6;
+    padding-bottom: 20px;
+    
+}
+
+.product_Wrapper{
+    max-width: 1200px;
+    height:1200px;
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    background-color: #f1f3f6;
+    /* height: 100%; */
+    
+    
+}
+.product-img-container{
+    flex: 1;
+    background-color: #fff;
+    padding: 8px;
+   
+    
+
+}
+.product-details-container{
+    flex: 1.2;
+    background-color: #fff;
+    padding: 8px;
+    height: 100%;
+}
+.product-img-wrapper{
+height: 550px;
+padding: 20px;
+position: relative;
+}
+.product_img{
+width: 400px;
+height: 500px;
+position: absolute;
+left: 0;
+right: 0;
+margin: auto;
+object-fit: cover;
+
+}
+.btn-container{
+display: flex;
+justify-content: center;
+width: 100%;
+padding: 20px;
+
+}
+.btn-container button{
+width: 400px;
+height: 50px;
+box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+border: none;
+color: #fff;
+
+}
+.buyNow,.addToCart{
+    background: #fb641b;
+    cursor: pointer;
+    font-family: "Robotto";
+    
+}
+.buyNow:hover,.addToCart:hover{
+  transition: all 1s ease;
+  font-size: 15px;
+  
+}
+
+
+.product-details-wrapper{
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+}
+.for-mobile-cat{
+    height: 300px;
+    position: relative;
+}
+.price{
+    font-size: 28px;
+    margin-top: 10px;
+}
+.specification{
+    position: absolute;
+    bottom: 0;
+   width: 100%;
+}
+.specification div{
+    padding: 10px 0;
+    margin-top: 10px;
+  
+}
+.specification div button{
+    margin-left: 20px;
+    border: 1px solid gray;
+    padding: 5px;
+    cursor: pointer;
+}
+.rating-reviews{
+    margin-top: 5px;
+}
+.rating-reviews .rate{
+    border: 1px solid gray;
+    padding: 0 5px;
+    margin-right: 10px;
+}
+.offer{
+    margin-top: 15px;
+   font-weight: 100;
+}
+.for-clothes-cat{
+    height: 300px;
+    position: relative;
+}
+.size{
+    margin-left: 30px;
+    width: 50px;
+    height: 30px;
+    padding: 5px;
+}
+
+@media screen and (max-width:650px){
+    .product_Wrapper{
+        flex-direction: column;
+        
+    }
+    .product_img{
+        width: 100%;
+
+    }
+    
+}

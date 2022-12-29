@@ -1,0 +1,122 @@
+.topBar{
+  
+    height:69px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    padding: 0px 40px 0px 20px;
+    
+}
+.topBar_left{
+flex: 1;
+}
+.topBar_Logo{
+    width: 35px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.topBar_search_logo{
+height: 45px;
+gap: 32px;
+border-radius: 16px;
+display: flex;
+flex-direction: row;
+align-items: center;
+
+}
+.topBar_search_logo input[type="search"]{
+    width: 402px;
+    height: 45px;
+    left: 67px;
+    padding: 13px 15px 13px 15px;
+    border: 1px solid #E5E7EB;
+    border-radius: 16px;
+    /* color: rgba(229,231,235,1); */
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    background-color: #F9FAFB;
+}
+.topBar_right{
+flex: 1;
+height: 32px;
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 12px;
+justify-content: flex-end;
+
+}
+.notification_icon{
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.notification_info_container{
+position:absolute;
+top: 19px;
+left: 32px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+background-color: #fff;
+width: 300px;
+height: 350px;
+z-index: 1000;
+display: block;
+border-radius:8px ;
+transition: all ease 5s;
+}
+.notification_icon_container{
+   position: absolute;
+
+    right: 0;
+    z-index: 2000;
+}
+
+
+@media screen and  (max-width:650px){
+    .topBar{
+        width: 100vw;
+    }
+    .topBar_search_logo input[type="search"]{
+        width: 150px;
+        height: 23px;
+        left: 60px;
+        
+    }
+    .topBar_Logo{
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .topBar_left{
+        flex: 0.5;
+    }
+
+    .topBar_search_logo{
+        width: 230px;
+        height: 45px;
+        gap: 20px;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+ 
+    }
+    .notification_icon{
+        position: relative;
+        /* width: 200px; */
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}

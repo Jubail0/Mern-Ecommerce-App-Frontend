@@ -1,0 +1,90 @@
+nav{
+width: 100vw;
+height: 44px;
+background-color: rgba(0,0,0,0.8);
+
+}
+.wrapper{
+    padding: 0px 22px;
+    max-width: 980px;
+    margin: 0 auto;
+    color: white;
+    font-size: 14px;
+    height: 44px;
+   
+}
+ul{
+    display: flex;
+    height: 44px;
+  
+    
+}
+li,.navLinks{
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-family: "Roboto";
+}
+#check{
+    display: none;
+}
+.checkBtn{
+    display: none;
+   
+}
+
+@media screen and (max-width:650px) {
+    
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        
+
+    }
+
+    .checkBtn{
+        margin-top: 12px;
+        margin-left: 12px;
+       
+    }
+
+    .wrapper ul{
+        display: none;
+        height: 80vh;
+       z-index: 10000;
+     
+    }
+   
+    .logo{
+        margin-bottom: 10px;
+    }
+    .li,.navLinks{
+        font-size: 20px;
+        padding: 16px 0px;
+      
+    }
+   
+    
+    .checkBtn{
+        display: block;
+    }
+
+   #check:checked ~ ul{
+    display: block;
+    background-color:rgba(0,0,0,0.8) ;
+    padding: 10px;
+    
+    
+   }
+   #check:checked ~ nav{
+    
+    height: 70vh;
+   }
+}

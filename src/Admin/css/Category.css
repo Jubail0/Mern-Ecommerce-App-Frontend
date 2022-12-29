@@ -1,0 +1,87 @@
+.category_container1{
+    height: 770px;
+    background: #FFFFFF;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    width: 83vw;
+    padding: 40px;
+   
+   
+}
+.category_body1{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    
+}
+.categoryInput_fields{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    
+}
+.categoryInput_fields label{
+    font-size: 20px;
+}
+.categoryInput_fields input{
+    height: 40px;
+    font-size: 17px;
+    padding: 5px;
+}
+.cat-btn{
+    width: 120px;
+}
+.category_container2{
+    width: 300px;
+    height: 500px;
+    background: #FFFFFF;
+    box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 16px;
+    padding: 20px;
+    position: fixed;
+    z-index:1;
+    top: 18%;
+    left: 0;
+   margin: auto;
+    right: 0;
+    
+    transition: all 2s ease;
+    
+}
+.subCategories_container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+    height: 400px;
+    overflow: auto;
+}
+.category_container2_heaading{
+    text-align: center;
+}
+.subCategories{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 0.5px solid rgb(183, 175, 175);
+    padding: 6px;
+    
+}
+.close_btn{
+    text-align: right;
+}
+.delete_btn{
+    cursor: pointer;
+}
+
+@media screen and  (max-width:650px){
+    .category_container1{
+        height: 770px;
+        
+    }
+}

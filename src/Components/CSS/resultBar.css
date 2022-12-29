@@ -1,0 +1,17 @@
+.resultBar{
+    width: 100vw;
+    height: 40px;
+    background-color: #fff;
+    box-shadow: 1px 1px 2px 0 rgba(0, 0, 0,0.5);
+    padding: 0 13%;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+@media screen and (min-width:650px) and (max-width:950px){
+    .resultBar{
+        padding: 0 17%;
+    }
+}
