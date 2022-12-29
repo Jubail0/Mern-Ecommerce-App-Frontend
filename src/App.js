@@ -110,7 +110,7 @@ function App() {
                        
 
                         {/*FOR ADMIN  */}
-                      {userData?.user.role === 'admin'? <> <Route path='/admin/dashboard' element={<Dashboard/>}/>
+                      {userData?.user?.role === 'admin'? <> <Route path='/admin/dashboard' element={<Dashboard/>}/>
                       
                         <Route path='/admin/addProduct' element={<AddProduct/>}/>
                         <Route path='/admin/orders' element={<Orders/>}/>
