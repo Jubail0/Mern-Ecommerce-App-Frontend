@@ -72,7 +72,7 @@ const dispatch = useDispatch()
                             </NavLink>
                         </>
                     }
-                      { isUser === true &&  userData.user.role === "user" &&<><li>
+                      { isUser === true &&  userData?.user?.role === "user" &&<><li>
                       <NavLink className='navLinks' to='/profile'> Profile</NavLink></li>
                       <li>
                       <NavLink className='navLinks' to='/myOrder'> Orders</NavLink>
@@ -80,13 +80,13 @@ const dispatch = useDispatch()
                     
 
 
-                      { userData?.user.role === "admin" && 
+                      { userData?.user?.role === "admin" && 
                       <NavLink to='/admin/dashboard' className='navLinks' onClick={()=> localStorage.setItem("validate",true)}> <li>
                         Dashboard
                         </li></NavLink>}
                       
 
-                       { (isUser === true && userData?.user.role === "user") &&  <li>
+                       { (isUser === true && userData?.user?.role === "user") &&  <li>
                             <NavLink className='navLinks' to='/cart'>
                                 <IconButton aria-label="cart">
                                     <StyledBadge badgeContent={
