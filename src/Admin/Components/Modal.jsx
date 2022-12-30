@@ -87,7 +87,7 @@ if(orderPage){
                     <ul className='single_order_lists_container' >
                    
                         <li className='single_order_list'><span>Order ID:</span>{(razorpay && razorpay.razorpayOrderId )||(codId && codId )}</li>
-                        <li className='single_order_list'><span>User ID:</span>{userId?.userId}</li>
+                        <li className='single_order_list'><span>User ID:</span>{userId && userId}</li>
                         <li className='single_order_list'><span>User Name:</span>{userAddress && userAddress.fullName.toUpperCase()}</li>
                         <li className='single_order_list ' >
                         <span>Products:</span><div className='prdcts-con'>{orderItems && orderItems?.products?.map((product,index) =>
