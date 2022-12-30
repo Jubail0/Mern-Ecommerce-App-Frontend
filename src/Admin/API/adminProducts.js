@@ -42,7 +42,7 @@ storage && formData.append('storage',storage)
     try {
 
         dispatch(loading_addpproduct())
-        const res = await fetch("https://my-shop-ecommerce-api.onrender.com/admin/addProduct",{
+        const res = await fetch(`${process.env.REACT_APP_FETCH_URL}/admin/addProduct`,{
         method:'POST',
         body:formData,
         credentials:'include'
