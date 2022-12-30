@@ -87,7 +87,6 @@ if(address.payment === "Cash on delivery" || !address.payment){
             currency: "INR",
             name: "Jubail Mallick",
             description: "Test Transaction",
-            image: "https://instagram.fccu31-1.fna.fbcdn.net/v/t51.2885-19/310706630_165575929408199_6934191854666201627_n.jpg?stp=dst-jpg_s150x150&_nc_ht=instagram.fccu31-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=RJH4MYw55fgAX_oa2kA&edm=ABmJApABAAAA&ccb=7-5&oh=00_AfAJvMfoBg3c5DDssVhGjSakDsQfdi6EgdKIQLJYqgcSVA&oe=63758416&_nc_sid=6136e7",
             order_id: data2.id.toString(), //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
             handler: async (response)=>{
                 const res3 = await fetch(`${process.env.REACT_APP_FETCH_URL}/cart/orderVerify`,{
@@ -120,8 +119,8 @@ if(address.payment === "Cash on delivery" || !address.payment){
 
             } ,
             prefill: {
-                name: "Jubail Mallick",
-                email: "jubail.mallick@example.com",
+                name: address.fullName,
+                email: "myShop@example.com",
                 contact: "9999999999"
             },
             notes: {
