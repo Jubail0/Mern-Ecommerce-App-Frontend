@@ -155,6 +155,7 @@ const deleteProduct = async(dispatch,id)=>{
         dispatch(loading_delete_product())
         const res3 = await fetch(`${process.env.REACT_APP_FETCH_URL}/admin/products/${id}`,{
         method:'DELETE',
+        headers:{'Content-Type':'application/json'},
         credentials:'include'
        })
        const data3 = await res3.json()
