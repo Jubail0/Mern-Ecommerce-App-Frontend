@@ -60,7 +60,7 @@ if(address.payment === "Cash on delivery" || !address.payment){
     })
     const data = await res.json()
 
-    const res2 = await fetch('/cart/createOrder',{
+    const res2 = await fetch(`${process.env.REACT_APP_FETCH_URL}/cart/createOrder`,{
     method:"POST",
     headers:{'Content-type':'application/json'},
     credentials:"include",
