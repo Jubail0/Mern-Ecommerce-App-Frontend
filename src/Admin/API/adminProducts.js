@@ -43,6 +43,7 @@ storage && formData.append('storage',storage)
 
         dispatch(loading_addpproduct())
         const res = await fetch(`${process.env.REACT_APP_FETCH_URL}/admin/addProduct`,{
+        mode: 'no-cors',
         method:'POST',
         body:formData,
         credentials:'include'
