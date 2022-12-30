@@ -56,7 +56,7 @@ if(address.payment === "Cash on delivery" || !address.payment){
     // Get Key_ID
     const res = await fetch(`${process.env.REACT_APP_FETCH_URL}/cart/getKey`,{
         method:"GET",
-        headers:{'Content-type':'application/json'}
+        credentials:"include",
     })
     const data = await res.json()
 
