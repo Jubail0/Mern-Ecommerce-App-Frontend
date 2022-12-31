@@ -42,7 +42,7 @@ const dispatch = useDispatch()
             
                     <ul>
                         <li className='logo'>
-                            <a href='/lo'>Logo</a>
+                            Logo
                         </li>
                         
                         <NavLink className='navLinks' to='/'>
