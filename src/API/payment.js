@@ -82,7 +82,7 @@ if(address.payment === "Cash on delivery" || !address.payment){
         console.log("error")
     }else{
         const options = {
-            key: data?.key?.toString(), // Enter the Key ID generated from the Dashboard
+            "key": data.key?.toString(), // Enter the Key ID generated from the Dashboard
             amount: Number(data2.amount), // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
             currency: "INR",
             name: address.fullName,
