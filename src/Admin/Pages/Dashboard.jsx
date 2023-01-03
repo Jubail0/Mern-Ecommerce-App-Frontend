@@ -36,7 +36,7 @@ function Dashboard() {
                <div className='analysis_container'>
                    <div className='earning_chart'>
                         <h2>SALES</h2>
-                        {dasboard_data?.monthlyIncome.length >0 ?<EarningChart earningData = {dasboard_data?.monthlyIncome}/>:<h3 style={{textAlign:'center'}}>No data yet...</h3>}
+                        {dasboard_data?.monthlyIncome?.length >0 ?<EarningChart earningData = {dasboard_data?.monthlyIncome}/>:<h3 style={{textAlign:'center'}}>No data yet...</h3>}
                     </div>
                     <div className='reports'>
                         <div className='reports_users'>
