@@ -43,7 +43,7 @@ function Dashboard() {
                             <h2>LATEST CUSTOMERS</h2>
 
                             <div className='newUsers'>
-                        {dasboard_data?.getNewUsers.length > 0 ?<NewUser newCustomers ={dasboard_data?.getNewUsers}/>:<h3 style={{textAlign:'center'}}>No data yet...</h3>}
+                        {dasboard_data?.getNewUsers?.length > 0 ?<NewUser newCustomers ={dasboard_data?.getNewUsers}/>:<h3 style={{textAlign:'center'}}>No data yet...</h3>}
                             </div>
 
                         </div>
